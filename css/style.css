@@ -183,7 +183,33 @@ footer{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 50px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.cont_redes{
+    margin: 20px;
+}
+.redes{
+    font-size: 30px;
+    padding-left: 10px;
+    margin: 20px;
+    border-radius: 35px;
+}
+.bi-whatsapp{
+    color: rgb(70, 148, 70);    
+}
+.bi-whatsapp:hover{
+    color: white;
+    background-color: rgb(70, 148, 70);
+    transition: all 0.5s ease;
+}
+.bi-facebook{
+    color: rgb(77, 77, 202);
+}
+.bi-facebook:hover{
+    color: white;
+    background-color: rgb(77, 77, 202);
+    transition: all 0.5s ease;
 }
 
 /*********************************************************************INFORMES SOCIALES**/
