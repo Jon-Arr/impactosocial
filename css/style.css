@@ -63,10 +63,14 @@ nav ul{
     margin-bottom: 15px;    
 }
 nav ul li{
+    display: flex;
+    justify-content: end;
+    align-items: center;
     width: 250px;
     height: 80px;
     background-color: rgba(126, 180, 250, 0.667);
     padding: 20px;
+    border-radius: 20px;
 }
 /*******************************************BODY**/
 section{
@@ -104,14 +108,22 @@ h2{
     border-bottom-left-radius: 10px;
 }
 .img_principal{
+    position:relative;
+    right: -500px;
     grid-column: 1 / 1;
     grid-row: 1 / 1;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 100px;
+    transform: translateX(-500px);
+    transition: all 1s ease;
 }
 .img_secundaria{
+    position:relative;
+    right: 500px;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 20px;
+    transform: translateX(500px);
+    transition: all 1s ease;
 }
 .cont_article, .cont_article2{
     display: flex;
@@ -121,6 +133,7 @@ h2{
     background-color: rgba(255, 255, 255, 0.463);
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgb(119, 119, 119);
+    z-index: 1;
 }
 .article2{
     display: grid;
